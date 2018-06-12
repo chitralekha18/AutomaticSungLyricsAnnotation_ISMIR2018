@@ -3,11 +3,15 @@
 Created by: Chitralekha Gupta
 
 Affiliation: NUS, Singapore
+
 Last edited on: 12th June 2018
+
 Last edited by: Chitralekha Gupta
 
 This is the code base for automatically obtaining aligned lyrics for solo-singing in Smule's Sing! karaoke DAMP dataset. It provides a cleaner annotated dataset.
+
 Please refer to the following paper for details:
+
 Gupta, C., Tong R., Li, H. and Wang, Y., 2018, September, "Automatic Sung-Lyrics Data Annotation". Accepted for ISMIR 2018, Paris.
 
 ## Contents
