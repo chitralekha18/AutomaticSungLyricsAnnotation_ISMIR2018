@@ -42,6 +42,7 @@ def M4AtoWAV16k(M4Afile,WAVfile):
         resampled_signal = resampled_signal*0.9
     scipy.io.wavfile.write(WAVfile,16000,resampled_signal)
 
+    #########################################################################
 def InitialFinalSilenceRemoved(sig):
     # Removes beginning and end silence periods of a wavfile
     # Input: sig, i.e. wavfile
@@ -89,6 +90,7 @@ def InitialFinalSilenceRemoved(sig):
         plt.show()
     return new_sig
 
+    #########################################################################
 def WavSplit(fs,initialsegmentfolder,file, sig,boundary,hop):
     # Splits wavfile into segments based on boundaries provided
     # Input: fs: sampling frequency
@@ -153,6 +155,7 @@ def WavSplit(fs,initialsegmentfolder,file, sig,boundary,hop):
     else:
         scipy.io.wavfile.write(WAVfile, fs, np.array(segment * 32678.0, dtype=np.int16))
 
+    #########################################################################
 def WavSplitMin10sec(fs,initialsegmentfolder,file, sig,boundary,hop):
     # Splits wavfile into 10 seconds segments based on boundaries provided
     # Input: fs: sampling frequency
@@ -224,6 +227,7 @@ def WavSplitMin10sec(fs,initialsegmentfolder,file, sig,boundary,hop):
     else:
         scipy.io.wavfile.write(WAVfile, fs, np.array(segment * 32678.0, dtype=np.int16))
 
+    #########################################################################
 def SplitWavdataByEnergy(sig,fs,initialsegmentfolder,file):
     # Splits wav data based on energy, i.e. pauses
     # Input: sig: the wavfile data in an array
@@ -357,6 +361,7 @@ def SplitWavdataByEnergy(sig,fs,initialsegmentfolder,file):
         plt.show()
     return
 
+    #########################################################################
 def WavSplitter(wavfile,initialsegmentfolder,file):
     # Wrapper for splitting wavfiles
     # Input: wavfile: path to the wavfile to be splitted
@@ -404,6 +409,7 @@ def GetLyrics(lyricsfolder,songname):
     all_lines =  ' '.join(all_lines)
     return all_lines
 
+    #########################################################################
 def CheckForNumerals(ASRtranscript_array):
     # Checks if there are numbers in a given transcript array, and converts them to words
     # eg. 16 will be converted to sixteen
@@ -420,6 +426,7 @@ def CheckForNumerals(ASRtranscript_array):
             data.append(item)
     return data
 
+    #########################################################################
 def GetLevenshteinScore(ASRtranscript,lyrics):
     #Creates an error matrix between transcript and lyrics using Levenshtein distance
     # Input: ASRtranscript, lyrics
@@ -446,6 +453,7 @@ def GetLevenshteinScore(ASRtranscript,lyrics):
     final_lyric_transcript = ' '.join(lyrics_array[min_lyric_index:min_lyric_index+N+min_lyric_window])
     return score, final_lyric_transcript
 
+    #########################################################################
 def GetScoreAndTranscript_LevenshteinMethod(N,lyrics,dict):
     # Create error matrix for 5 windows of words, and calculate the minimum cost transcription from the lyrics.
     # This has to happen for every ASR output
@@ -472,6 +480,7 @@ def GetScoreAndTranscript_LevenshteinMethod(N,lyrics,dict):
 
     return percent_correct[max_score_index], lyric_transcripts[max_score_index], ASRtranscript_array
 
+    #########################################################################
 def RecognitionAndMatching(initialsegmentfolder,targetfile,finalsegmentfolder,songname,lyricsfolder,fout1,fout2):
     # Iterate through all the segments of that particular rendition (song)
     # For every segment, do recognition using google API
