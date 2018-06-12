@@ -23,11 +23,12 @@ from shutil import copyfile
 plot = 0
 NFFT = 512
 
+    #########################################################################
 def M4AtoWAV16k(M4Afile,WAVfile):
     # Converts .m4a to .wav
     # Input: m4a file, output wavfile name/path
     # Output: wavfile
-    #######################
+    #########################################################################
     fs = 16000
     print M4Afile
     m4a_version = AudioSegment.from_file(M4Afile)
