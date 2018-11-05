@@ -12,7 +12,7 @@ This is the code base for automatically obtaining aligned lyrics for solo-singin
 
 Please refer to the following paper for details:
 
-Gupta, C., Tong R., Li, H. and Wang, Y., 2018, September, "Automatic Sung-Lyrics Data Annotation". Accepted for ISMIR 2018, Paris.
+Gupta, C., Tong R., Li, H. and Wang, Y., 2018, September, "SEMI-SUPERVISED LYRICS AND SOLO-SINGING ALIGNMENT". Accepted for ISMIR 2018, Paris.(http://ismir2018.ircam.fr/doc/pdfs/30_Paper.pdf)
 
 ## Contents
 This consists of the following:
