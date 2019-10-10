@@ -35,6 +35,9 @@ This consists of the following:
 - The script currently runs for one example file present in the folder "audio"
 - You can add more files from the DAMP dataset to the "audio" folder
 
+## License
+The code and models in this repository are licensed under the GNU General Public License Version 3. For commercial use of this code and models, separate commercial licensing is also available. Please see the contacts below.
+
 ## Contact
 - Chitralekha Gupta: chitralekha[at]u[dot]nus[dot]edu
 - Haizhou Li: haizhou[dot]li[at]nus[dot]edu[dot]sg
