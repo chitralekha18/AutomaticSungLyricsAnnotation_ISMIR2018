@@ -14,17 +14,6 @@ Please refer to the following paper for details:
 
 Gupta, C., Tong R., Li, H. and Wang, Y., 2018, September, "SEMI-SUPERVISED LYRICS AND SOLO-SINGING ALIGNMENT". Accepted for ISMIR 2018, Paris.(http://ismir2018.ircam.fr/doc/pdfs/30_Paper.pdf)
 
-## Contents
-This consists of the following:
-- Audio folder (folder: audio), where an example audio (.m4a) from DAMP dataset is provided
-- Converted .m4a to .wav are in the folder: wavfiles
-- All ~10 seconds segments are in the folder: wavsegments_initial
-- Cleaned up subset of segments are in the folder wavsegments_final, the corresponding automatically obtained lyrics annotations are in "resultant.txt"
-- fulloutput.txt contains all segment names, lyric window transcript, ASR transcript, and %correct
-- Lyrics folder (folder: lyrics), where lyrics are extracted from Smule Sing! website
-- 'perfs20.csv' is a meta-data file from Kruspe's dataset, given here: http://www.music-ir.org/mirex/wiki/2017:Automatic_Lyrics-to-Audio_Alignment
-- Rest are python scripts and other dependency files.
-
 
 ## Dependencies
 - This program is designed for monophonic (without background music) audio files.
